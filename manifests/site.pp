@@ -1,7 +1,5 @@
-node default {
-  file {'/root/README': 
-      ensure  => file,
-      content => 'This is a readme',
-      owner   => 'root',
-  }
+node default {  
+}
+node 'master.node.vm' {
+  include role::master_server
 }
